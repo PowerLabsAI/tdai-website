@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#060d20">
+<meta name="description" content="Token Detective AI — a research-first Solana token investigation platform in development.">
+<title>Token Detective AI | Research First</title>
+<style>
+:root {
+  --bg: #060d20;
+  --panel: #101e3b;
+  --blue: #3989ff;
+  --cyan: #64d9ff;
+  --text: #f0f6ff;
+  --muted: #aabbd6;
+  --line: #243a60;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 6%;
+  border-bottom: 1px solid var(--line);
+}
+.brand {
+  color: var(--cyan);
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--cyan); }
+.hero {
+  text-align: center;
+  padding: 105px 20px 95px;
+  background:
+    radial-gradient(ellipse at 50% 0%,
+      #153e82 0%, #0b1a3c 40%, #060d20 80%);
+}
+.tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #3369b0;
+  border-radius: 30px;
+  color: var(--cyan);
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  line-height: 1.13;
+  margin: 25px 0;
+}
+h1 span {
+  color: var(--cyan);
+  text-shadow: 0 0 32px #176fe088;
+}
+.hero p {
+  max-width: 630px;
+  margin: 0 auto 30px;
+  color: var(--muted);
+  font-size: 17px;
+}
+.button {
+  display: inline-block;
+  background: linear-gradient(120deg, #2879f5, #55c5ff);
+  color: #ffffff;
+  padding: 14px 27px;
+  border-radius: 9px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover { filter: brightness(1.15); }
+section {
+  max-width: 1120px;
+  margin: auto;
+  padding: 75px 6%;
+}
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 0;
+}
+.subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 38px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(220px, 1fr)
+  );
+  gap: 19px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 27px;
+  border-radius: 15px;
+}
+.card h3 {
+  color: var(--cyan);
+  margin-top: 0;
+}
+.card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+.status {
+  text-align: center;
+  padding: 45px 25px;
+  background: linear-gradient(140deg,
+    #102b5b, #101e3b);
+  border: 1px solid #315b99;
+  border-radius: 17px;
+}
+.status p { color: var(--muted); }
+.status strong { color: var(--cyan); }
+footer {
+  text-align: center;
+  border-top: 1px solid var(--line);
+  padding: 28px 18px;
+  color: var(--muted);
+  font-size: 13px;
+}
+@media(max-width: 600px) {
+  header { flex-direction: column; gap: 12px; }
+  nav a { margin: 0 9px; }
+  .hero { padding: 75px 18px; }
+  section { padding: 55px 6%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">TDAI ◈</div>
+  <nav>
+    <a href="#features">Research</a>
+    <a href="#status">Development</a>
+    <a href="https://x.com/TokenDetectiveAI"
+       target="_blank" rel="noopener noreferrer">X</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="tag">
+      SOLANA RESEARCH INTELLIGENCE
+    </div>
+    <h1>
+      Investigate Before<br>
+      <span>You Invest.</span>
+    </h1>
+    <p>
+      Token Detective AI is building a
+      research-first platform to investigate
+      crypto tokens, uncover potential risks
+      and help users make more informed decisions.
+    </p>
+    <a class="button" href="#features">
+      Explore Our Research
+    </a>
+  </div>
+
+  <section id="features">
+    <h2>Research First. Hype Last.</h2>
+    <p class="subtitle">
+      Our planned research capabilities
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <h3>🔍 Token Investigation</h3>
+        <p>
+          Examine Solana token contracts,
+          market data and security signals.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ Risk Analysis</h3>
+        <p>
+          Investigate holder concentration,
+          token authorities, liquidity
+          and other warning signs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Market Discovery</h3>
+        <p>
+          Find tokens for further investigation
+          using liquidity and trading data.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🕵️ Wallet Detective</h3>
+        <p>
+          Research token creators, holder
+          distributions and potential
+          insider relationships.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="status">
+    <div class="status">
+      <h2>The Investigation Is Underway</h2>
+      <p>
+        Our research engine is in development
+        and security testing.
+      </p>
+      <p><strong>
+        Public Token Scanner — Coming Soon
+      </strong></p>
+      <a class="button"
+         href="https://x.com/TokenDetectiveAI"
+         target="_blank" rel="noopener noreferrer">
+        Follow TDAI on X
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Token Detective AI — TDAI</p>
+  <p>
+    Research tools are informational
+    and do not constitute financial advice.
+  </p>
+</footer>
+
+</body>
+</html>
